@@ -8,13 +8,13 @@ if [[ -z "$PLATFORM" ]]; then
 fi
 
 OPENCASCADE_VERSION=7.4.0
-GITHUB_RELEASE=https://github.com/tpaviot/oce/releases/download/official-upstream-packages/opencascade-$OPENCASCADE_VERSION.tgz
-download $GITHUB_RELEASE opencascade-$OPENCASCADE_VERSION.tgz
+#GITHUB_RELEASE=https://github.com/tpaviot/oce/releases/download/official-upstream-packages/opencascade-$OPENCASCADE_VERSION.tgz
+#download $GITHUB_RELEASE opencascade-$OPENCASCADE_VERSION.tgz
 
 mkdir -p $PLATFORM
 cd $PLATFORM
-tar -xzvf ../opencascade-$OPENCASCADE_VERSION.tgz
-cd opencascade-$OPENCASCADE_VERSION
+#tar -xzvf ../opencascade-$OPENCASCADE_VERSION.tgz
+#cd opencascade-$OPENCASCADE_VERSION
 
 case $PLATFORM in
     android-arm)
@@ -73,9 +73,21 @@ case $PLATFORM in
         make install
         ;;
     macosx-*)
-        $CMAKE -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=.. .
-        make -j $MAKEJ
-        make install
+        #pwd
+        cp -r ../../occ_foundation/* .
+        #$CMAKE  -DBUILD_MODULE_ApplicationFramework:BOOL=FALSE \
+        #        -DBUILD_MODULE_DataExchange:BOOL=FALSE \
+        #        -DBUILD_MODULE_Draw:BOOL=FALSE \
+        #        -DBUILD_MODULE_FoundationClasses:BOOL=TRUE \
+        #        -DBUILD_MODULE_ModelingAlgorithm:BOOL=FALSE \
+        #        -DBUILD_MODULE_ModelingData:BOOL=FALSE \
+        #        -DBUILD_MODULE_Visualisation:BOOL=FALSE \
+        #        -DBUILD_LIBRARY_TYPE=Shared \
+        #        -DCMAKE_CXX_STANDARD=11 \
+        #        -DCMAKE_BUILD_TYPE=Release \
+        #        -DCMAKE_INSTALL_PREFIX=.. .
+        #make -j $MAKEJ
+        #make install
         ;;
     windows-x86)
         "$CMAKE" -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=.. .
