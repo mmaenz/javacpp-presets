@@ -3,7 +3,7 @@
 **/cppbuild/**
 **/target/**
 **/samples/data
-
+**/occ*/**
 # Mac
 .DS_Store
 
