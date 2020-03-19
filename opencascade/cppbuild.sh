@@ -78,11 +78,12 @@ case $PLATFORM in
         #$CMAKE  -DBUILD_MODULE_ApplicationFramework:BOOL=FALSE \
         #        -DBUILD_MODULE_DataExchange:BOOL=FALSE \
         #        -DBUILD_MODULE_Draw:BOOL=FALSE \
-        #        -DBUILD_MODULE_FoundationClasses:BOOL=TRUE \
+        #       -DBUILD_MODULE_FoundationClasses:BOOL=TRUE \
         #        -DBUILD_MODULE_ModelingAlgorithm:BOOL=FALSE \
         #        -DBUILD_MODULE_ModelingData:BOOL=FALSE \
         #        -DBUILD_MODULE_Visualisation:BOOL=FALSE \
         #        -DBUILD_LIBRARY_TYPE=Shared \
+        #        -DINSTALL_DIR_INCLUDE=include \
         #        -DCMAKE_CXX_STANDARD=11 \
         #        -DCMAKE_BUILD_TYPE=Release \
         #        -DCMAKE_INSTALL_PREFIX=.. .

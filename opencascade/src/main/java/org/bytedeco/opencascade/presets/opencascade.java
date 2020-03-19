@@ -36,9 +36,9 @@ import org.bytedeco.opencascade.presets.frameworks.Foundation;
  * @author Laurens Van Houtven
  */
 @Properties(
-    inherit = {Foundation.class}, 
+    inherit = {Foundation.class},
     target = "org.bytedeco.opencascade", 
-    global = "org.bytedeco.opencascade.global.opencascade" 
+    global = "org.bytedeco.opencascade.global.opencascade"
 )
 
 public class opencascade implements InfoMapper {
