@@ -84,6 +84,7 @@ case $PLATFORM in
         #        -DBUILD_MODULE_Visualisation:BOOL=FALSE \
         #        -DBUILD_LIBRARY_TYPE=Shared \
         #        -DINSTALL_DIR_INCLUDE=include \
+        #        -DINSTALL_FREETYPE:BOOL=FALSE \
         #        -DCMAKE_CXX_STANDARD=11 \
         #        -DCMAKE_BUILD_TYPE=Release \
         #        -DCMAKE_INSTALL_PREFIX=.. .
