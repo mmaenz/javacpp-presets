@@ -1,0 +1,5 @@
+"opencascade/RWStl.hxx"
+"opencascade/RWStl_Reader.hxx"
+"opencascade/StlAPI.hxx"
+"opencascade/StlAPI_Reader.hxx"
+"opencascade/StlAPI_Writer.hxx"

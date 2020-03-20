@@ -78,7 +78,7 @@ case $PLATFORM in
         #$CMAKE  -DBUILD_MODULE_ApplicationFramework:BOOL=FALSE \
         #        -DBUILD_MODULE_DataExchange:BOOL=FALSE \
         #        -DBUILD_MODULE_Draw:BOOL=FALSE \
-        #       -DBUILD_MODULE_FoundationClasses:BOOL=TRUE \
+        #        -DBUILD_MODULE_FoundationClasses:BOOL=TRUE \
         #        -DBUILD_MODULE_ModelingAlgorithm:BOOL=FALSE \
         #        -DBUILD_MODULE_ModelingData:BOOL=FALSE \
         #        -DBUILD_MODULE_Visualisation:BOOL=FALSE \
